@@ -1,6 +1,7 @@
 // import { ImageBackground } from "expo-image";
 import { Text, View, StyleSheet, ImageBackground, Image } from "react-native";
 import { Input } from '../components/input/input';
+import { Botao } from '../components/botao/botao';
 
 export default function Index() {
   return (
@@ -21,10 +22,10 @@ export default function Index() {
     <View style={styles.container}>
     {/* 2.1 Titulo */}
     <Text style={styles.titulo}>Consulte seu Cep</Text>
-
-    <Input/>
-    </View>
     {/* 2.2 Input */}
+    <Input/>
+    <Botao tituloBotao='Consultar'/>
+    </View>
     {/* 2.3 Botao */}
     {/* 2.4 Card de informacoes */}
     </>
@@ -52,6 +53,8 @@ const styles = StyleSheet.create({
     gap: 40
   },
   titulo: {
-    fontSize: 25
+    fontFamily: 'Poppins-Bold',
+    fontSize: 22,
+    color: '#000000'
   }
 })
