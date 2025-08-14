@@ -6,7 +6,7 @@ export default function RootLayout() {
   // Carregar fontes
   const [fontsLoaded] = useFonts({
     "Poppins-Regular": require("../assets/fonts/Poppins/Poppins-Regular.ttf"),
-    "Poppins-Bold": require("../assets/fonts/Poppins/Poppins-SemiBold.ttf")
+    "Poppins-Bold": require("../assets/fonts/Poppins/Poppins-Bold.ttf")
   });
 
   // Enquanto não carregar as fontes, mostrar loading
